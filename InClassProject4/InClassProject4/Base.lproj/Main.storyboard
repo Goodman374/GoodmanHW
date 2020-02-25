@@ -31,6 +31,9 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F9D-XF-B1t"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vFD-Fb-CZk">
                                 <rect key="frame" x="159" y="512" width="97" height="34"/>
@@ -67,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="-57.971014492753625" y="116.51785714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Data CollectionVC-->
         <scene sceneID="hqq-Lm-tNC">
             <objects>
-                <viewController id="x8y-Up-cb5" sceneMemberID="viewController">
+                <viewController id="x8y-Up-cb5" customClass="DataCollectionVC" customModule="InClassProject4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7tx-iF-ZqQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,6 +94,14 @@
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="OSh-u9-O4n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQ9-6a-kjF">
+                                <rect key="frame" x="209" y="250" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="Alert2:" destination="x8y-Up-cb5" eventType="touchUpInside" id="bja-i5-Kju"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A95BFAA22404173D0033B42C /* DataCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BFAA12404173D0033B42C /* DataCollectionVC.swift */; };
 		A9E9FCE123FAD88700AC15AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E9FCE023FAD88700AC15AA /* AppDelegate.swift */; };
 		A9E9FCE323FAD88700AC15AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E9FCE223FAD88700AC15AA /* SceneDelegate.swift */; };
 		A9E9FCE523FAD88700AC15AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E9FCE423FAD88700AC15AA /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A95BFAA12404173D0033B42C /* DataCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionVC.swift; sourceTree = "<group>"; };
 		A9E9FCDD23FAD88700AC15AA /* InClassProject4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InClassProject4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E9FCE023FAD88700AC15AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9E9FCE223FAD88700AC15AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				A9E9FCE223FAD88700AC15AA /* SceneDelegate.swift */,
 				A9E9FCE423FAD88700AC15AA /* ViewController.swift */,
 				A9E9FCE623FAD88700AC15AA /* Main.storyboard */,
+				A95BFAA12404173D0033B42C /* DataCollectionVC.swift */,
 				A9E9FCE923FAD88C00AC15AA /* Assets.xcassets */,
 				A9E9FCEB23FAD88C00AC15AA /* LaunchScreen.storyboard */,
 				A9E9FCEE23FAD88C00AC15AA /* Info.plist */,
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A95BFAA22404173D0033B42C /* DataCollectionVC.swift in Sources */,
 				A9E9FCE523FAD88700AC15AA /* ViewController.swift in Sources */,
 				A9E9FCE123FAD88700AC15AA /* AppDelegate.swift in Sources */,
 				A9E9FCE323FAD88700AC15AA /* SceneDelegate.swift in Sources */,
