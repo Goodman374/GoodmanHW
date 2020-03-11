@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A904C06C24191E5100EC5500 /* Navigation[2] in Resources */ = {isa = PBXBuildFile; fileRef = A904C06B24191E5100EC5500 /* Navigation[2] */; };
+		A904C06E24191E6D00EC5500 /* TabOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A904C06D24191E6D00EC5500 /* TabOneVC.swift */; };
+		A904C07024191E8400EC5500 /* TabTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A904C06F24191E8400EC5500 /* TabTwoVC.swift */; };
+		A904C07224191E9B00EC5500 /* TabThreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A904C07124191E9B00EC5500 /* TabThreeVC.swift */; };
+		A904C07424191FC200EC5500 /* ManagementTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A904C07324191FC200EC5500 /* ManagementTabVC.swift */; };
 		A969F77224167DD5007049A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969F77124167DD5007049A5 /* AppDelegate.swift */; };
 		A969F77424167DD5007049A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969F77324167DD5007049A5 /* SceneDelegate.swift */; };
 		A969F77624167DD5007049A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969F77524167DD5007049A5 /* ViewController.swift */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A904C06B24191E5100EC5500 /* Navigation[2] */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Navigation[2]"; sourceTree = "<group>"; };
+		A904C06D24191E6D00EC5500 /* TabOneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabOneVC.swift; sourceTree = "<group>"; };
+		A904C06F24191E8400EC5500 /* TabTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTwoVC.swift; sourceTree = "<group>"; };
+		A904C07124191E9B00EC5500 /* TabThreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabThreeVC.swift; sourceTree = "<group>"; };
+		A904C07324191FC200EC5500 /* ManagementTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementTabVC.swift; sourceTree = "<group>"; };
 		A969F76E24167DD5007049A5 /* Navigation[2].app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navigation[2].app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A969F77124167DD5007049A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A969F77324167DD5007049A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +113,11 @@
 				A969F77324167DD5007049A5 /* SceneDelegate.swift */,
 				A969F77524167DD5007049A5 /* ViewController.swift */,
 				A969F77724167DD5007049A5 /* Main.storyboard */,
+				A904C07324191FC200EC5500 /* ManagementTabVC.swift */,
+				A904C06D24191E6D00EC5500 /* TabOneVC.swift */,
+				A904C06F24191E8400EC5500 /* TabTwoVC.swift */,
+				A904C07124191E9B00EC5500 /* TabThreeVC.swift */,
+				A904C06B24191E5100EC5500 /* Navigation[2] */,
 				A969F77A24167DDB007049A5 /* Assets.xcassets */,
 				A969F77C24167DDB007049A5 /* LaunchScreen.storyboard */,
 				A969F77F24167DDB007049A5 /* Info.plist */,
@@ -235,6 +250,7 @@
 				A969F77E24167DDB007049A5 /* LaunchScreen.storyboard in Resources */,
 				A969F77B24167DDB007049A5 /* Assets.xcassets in Resources */,
 				A969F77924167DD5007049A5 /* Main.storyboard in Resources */,
+				A904C06C24191E5100EC5500 /* Navigation[2] in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +276,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A969F77624167DD5007049A5 /* ViewController.swift in Sources */,
+				A904C07224191E9B00EC5500 /* TabThreeVC.swift in Sources */,
 				A969F77224167DD5007049A5 /* AppDelegate.swift in Sources */,
+				A904C07024191E8400EC5500 /* TabTwoVC.swift in Sources */,
+				A904C07424191FC200EC5500 /* ManagementTabVC.swift in Sources */,
 				A969F77424167DD5007049A5 /* SceneDelegate.swift in Sources */,
+				A904C06E24191E6D00EC5500 /* TabOneVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

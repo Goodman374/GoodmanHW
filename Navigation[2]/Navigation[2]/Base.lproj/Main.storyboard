@@ -10,7 +10,7 @@
         <!--Item 2-->
         <scene sceneID="k3I-lo-APr">
             <objects>
-                <viewController id="JUT-dX-6PK" sceneMemberID="viewController">
+                <viewController id="JUT-dX-6PK" customClass="TabTwoVC" customModule="Navigation_2_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jbf-f0-bEE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,6 +22,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xL7-Ya-30n">
+                                <rect key="frame" x="20" y="171" width="374" height="467"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="153"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="UZe-eN-bba"/>
@@ -29,15 +37,18 @@
                     <tabBarItem key="tabBarItem" title="Item 2" image="book.fill" catalog="system" selectedImage="book" id="H2p-uA-meV">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="currentCount" destination="xL7-Ya-30n" id="J98-0L-GcT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hIK-vx-WI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1519" y="298"/>
+            <point key="canvasLocation" x="1518.840579710145" y="297.32142857142856"/>
         </scene>
         <!--Take Off-->
         <scene sceneID="ZHt-zP-qqD">
             <objects>
-                <viewController id="E26-vp-azd" sceneMemberID="viewController">
+                <viewController id="E26-vp-azd" customClass="TabOneVC" customModule="Navigation_2_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xVv-zk-2FC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,6 +60,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3F5-wa-EkK">
+                                <rect key="frame" x="83" y="292" width="246" height="313"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addOne:" destination="iw9-FE-d1d" eventType="touchUpInside" id="vIr-lV-H3W"/>
+                                    <action selector="buttonAdd:" destination="iw9-FE-d1d" eventType="touchUpInside" id="540-Gj-bOX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6NV-1n-7Nr"/>
@@ -58,29 +82,45 @@
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tIy-Cx-QaN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="iw9-FE-d1d" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1519" y="-350"/>
+            <point key="canvasLocation" x="1518.840579710145" y="-350.22321428571428"/>
         </scene>
         <!--Item-->
         <scene sceneID="GTs-aJ-bxR">
             <objects>
-                <viewController id="GKa-sb-6ei" sceneMemberID="viewController">
+                <viewController id="GKa-sb-6ei" customClass="TabThreeVC" customModule="Navigation_2_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="38E-gM-ACh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11G-em-QUI">
+                                <rect key="frame" x="48" y="195" width="318" height="505"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <state key="normal" title="Subtract">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="subtractOne:" destination="zy7-EI-AOP" eventType="touchUpInside" id="DVK-zc-iG0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ni3-dc-z1T"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="bookmark.fill" catalog="system" selectedImage="bookmark" id="KD1-Ug-Hs8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xe4-va-5jd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zy7-EI-AOP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-328" y="-26"/>
+            <point key="canvasLocation" x="2279.7101449275365" y="-26.116071428571427"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Management TabVC-->
         <scene sceneID="zzB-c6-yq9">
             <objects>
-                <tabBarController id="iut-k3-YoS" sceneMemberID="viewController">
+                <tabBarController id="iut-k3-YoS" customClass="ManagementTabVC" customModule="Navigation_2_" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FDI-Nt-kEG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
