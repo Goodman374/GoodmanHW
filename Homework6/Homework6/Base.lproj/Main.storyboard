@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vote-->
+        <scene sceneID="Ypc-aM-6Vq">
+            <objects>
+                <viewController id="2Wu-i7-OPy" customClass="VotingVC" customModule="Homework6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="39h-gU-9mG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0X-W7-4rV">
+                                <rect key="frame" x="46" y="118" width="323" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Paula-Barrett-Thumbs-Up-Actions"/>
+                                <connections>
+                                    <action selector="voteYes:" destination="TQ4-ER-C7m" eventType="touchUpInside" id="jmS-0d-s8K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hV-y5-UOc">
+                                <rect key="frame" x="46" y="464" width="323" height="307"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="thumbs-down"/>
+                                <connections>
+                                    <action selector="voteNo:" destination="TQ4-ER-C7m" eventType="touchUpInside" id="P9E-kx-Os6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Y7j-lt-8n1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Vote" image="flame.fill" catalog="system" selectedImage="flame" id="0QQ-cq-dyB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsZ-hq-cRS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="TQ4-ER-C7m" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-36.231884057971016" y="251.78571428571428"/>
+        </scene>
+        <!--Total Votes-->
+        <scene sceneID="7xB-Gl-5X9">
+            <objects>
+                <viewController id="bVe-kU-VOw" customClass="TVViewController" customModule="Homework6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Mc-LB-FFj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4YN-Zr-XQD">
+                                <rect key="frame" x="267" y="180" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Paula-Barrett-Thumbs-Up-Actions" translatesAutoresizingMaskIntoConstraints="NO" id="RsS-UD-UmS">
+                                <rect key="frame" x="19" y="126" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumbs-down" translatesAutoresizingMaskIntoConstraints="NO" id="D6c-WX-gyv">
+                                <rect key="frame" x="19" y="327" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPE-XS-DQg">
+                                <rect key="frame" x="267" y="381" width="37" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HaHa! Winners WIn and Losers Lose! But your WInner is:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMl-MX-fwU">
+                                <rect key="frame" x="41" y="601" width="332" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdp-1l-evq">
+                                <rect key="frame" x="203" y="688" width="8" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XL1-J6-ljN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Total Votes" image="folder.fill" catalog="system" selectedImage="folder" id="lIE-Ua-Bwm"/>
+                    <connections>
+                        <outlet property="downVoteCounter" destination="VPE-XS-DQg" id="rn4-el-xTW"/>
+                        <outlet property="upVoteCounter" destination="4YN-Zr-XQD" id="LFL-So-uAG"/>
+                        <outlet property="winner" destination="Bdp-1l-evq" id="g6G-83-7id"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2j-pc-wEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="996.42857142857133"/>
+        </scene>
+        <!--Hello!-->
+        <scene sceneID="7vl-Pc-Aay">
+            <objects>
+                <viewController title="Hello!" id="Byk-Jp-wdN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9cC-3c-Kwj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZ6-qj-J2i">
+                                <rect key="frame" x="10" y="88" width="394" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Vote Yes or Vote NO!">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you feel as though sports should be some part of every humans life?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Z8-Rr-pcE">
+                                <rect key="frame" x="71" y="611" width="273" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="MDV-bT-0US"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hello!" image="person.fill" catalog="system" selectedImage="person" id="gcJ-ez-Mrp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0R5-Gd-mVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68.115942028985515" y="-455.35714285714283"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="irp-Id-CZS">
+            <objects>
+                <tabBarController id="Jfm-Fb-Mkq" customClass="TBViewController" customModule="Homework6" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FSD-8c-iMH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Byk-Jp-wdN" kind="relationship" relationship="viewControllers" id="SWv-hX-iuj"/>
+                        <segue destination="2Wu-i7-OPy" kind="relationship" relationship="viewControllers" id="t6T-kI-77c"/>
+                        <segue destination="bVe-kU-VOw" kind="relationship" relationship="viewControllers" id="gnF-Vi-yND"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucY-89-bmF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-987" y="-131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Paula-Barrett-Thumbs-Up-Actions" width="384" height="383"/>
+        <image name="flame" catalog="system" width="54" height="64"/>
+        <image name="flame.fill" catalog="system" width="54" height="64"/>
+        <image name="folder" catalog="system" width="64" height="46"/>
+        <image name="folder.fill" catalog="system" width="64" height="46"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
+        <image name="thumbs-down" width="1809" height="1802"/>
+    </resources>
+</document>
