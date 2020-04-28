@@ -15,6 +15,7 @@
 		A904C10E2434EC3800EC5500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A904C10C2434EC3800EC5500 /* LaunchScreen.storyboard */; };
 		A904C1192434EC3900EC5500 /* Homework7Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A904C1182434EC3900EC5500 /* Homework7Tests.swift */; };
 		A904C1242434EC3900EC5500 /* Homework7UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A904C1232434EC3900EC5500 /* Homework7UITests.swift */; };
+		A93FD98E2458928F005D7865 /* Homework 9.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93FD98C2458928F005D7865 /* Homework 9.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A904C11F2434EC3900EC5500 /* Homework7UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Homework7UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A904C1232434EC3900EC5500 /* Homework7UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework7UITests.swift; sourceTree = "<group>"; };
 		A904C1252434EC3900EC5500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A93FD98D2458928F005D7865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Homework7/Base.lproj/Homework 9.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		A904C0F52434EC3100EC5500 = {
 			isa = PBXGroup;
 			children = (
+				A93FD98C2458928F005D7865 /* Homework 9.storyboard */,
 				A904C1002434EC3100EC5500 /* Homework7 */,
 				A904C1172434EC3900EC5500 /* Homework7Tests */,
 				A904C1222434EC3900EC5500 /* Homework7UITests */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A904C10E2434EC3800EC5500 /* LaunchScreen.storyboard in Resources */,
+				A93FD98E2458928F005D7865 /* Homework 9.storyboard in Resources */,
 				A904C10B2434EC3800EC5500 /* Assets.xcassets in Resources */,
 				A904C1092434EC3100EC5500 /* Main.storyboard in Resources */,
 			);
@@ -311,6 +315,14 @@
 				A904C10D2434EC3800EC5500 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A93FD98C2458928F005D7865 /* Homework 9.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A93FD98D2458928F005D7865 /* Base */,
+			);
+			name = "Homework 9.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreLocation
+import WebKit
+
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
@@ -37,9 +39,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 distanceLabel.text=commaDelimited.string(from: NSNumber(value: miles))!+"Miles to M&T Bank Stadium"
             }
         }
+        
+        
+        
+    }
+    @IBAction func openSite(_ sender: Any) {
+        if let url = URL (string: "https://www.nflshop.com/baltimore-ravens/t-36590255+z-9152346-3829362677?_s=google-ak1900nfl&adposition=&ks_id=6220_kw17153617&matchtype=be&msclkid=f01faa6c263711a971d1f4c44610a565&pcrid=14697292682&target=kwd-25708953857%3Aloc-190&utm_campaign=NFL+-+Team+Name+-+Baltimore+Ravens%7C264650704&utm_medium=ppc&utm_source=o&utm_term=baltimore+ravens") {
+            UIApplication.shared.open(url, options: [:])
     }
     
-    override func viewDidLoad() {
+        
+        
+        
+        
+        
+        func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         locMan.delegate = self
@@ -54,3 +68,4 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
 }
 
+}
